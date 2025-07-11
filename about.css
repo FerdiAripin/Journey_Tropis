@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+
+:root {
+
+    --dark-green: #112a34;
+    --green-color: #004047;
+    --white-color: #fff;
+}
+
+::selection {
+    background: var(--green-color);
+    color: var(--white-color);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-size: 90%;
+}
+
+section {
+    padding: 0 8rem;
+    width: 100%;
+}
+.label {
+  font-size: 1.1rem;
+  color:  #666;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.heading {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+section.home {
+  padding: 1rem;
+  width: 100%;
+  height: 100vh;
+}
+
+.home .home-box {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url("images/beautiful_diamond_beach_penida_island_bali_indonesia_1.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: .5rem;
+  border-top-left-radius: 10px; /* Radius pada sudut kiri atas */
+    border-top-right-radius: 10px; /* Radius pada sudut kanan atas */
+}
+
+.home .home-box nav {
+  margin-left: 3px;
+  width: 99.3%;
+  height: 65px;
+  background: linear-gradient(rgb(255,255,255,.2),rgb(255,255,255,.2));
+  backdrop-filter: blur(1px);
+  border-radius: .7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  z-index: 10;
+  position:relative;
+}
+
+.home .home-box nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home .home-box nav .logo .bar {
+  font-size: 1.35rem;
+  color: var(--white-color);
+  cursor: pointer;
+  display: none;
+}
+
+.home .home-box nav .logo .bar:hover {
+  color: var(--green-color);
+}
+
+ h3{
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+.home .home-box nav .logo img{
+  padding: 2%;
+  width: 70px;
+  
+}
+.home .home-box nav .logo h3 {
+  color: var(--white-color);
+  font-weight: 400;
+}
+
+.home .home-box nav .menu .close {
+  display: none;
+}
+
+.home .home-box nav .menu ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.home .home-box nav .menu ul li a {
+  color: var(--white-color);
+  font-weight: 400;
+}
+
+.home .home-box nav .menu ul li a:hover {
+  color: rgb(255 255 255/70%);
+}
+.home .home-box nav .signup-login {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.home .home-box nav .signup-login a {
+  color: var(--white-color);
+  padding: .3rem 1rem;
+  border-radius: 2rem;
+}
+
+.home .home-box nav .signup-login a:last-child {
+  background: #0a797f;
+  padding: .3rem 1rem;
+  border-radius: 2rem;
+}
+
+.home .home-box nav .signup-login a:hover {
+  color: rgb(255 255 255/70%);
+}
+
+.home .home-box nav .signup-login a:last-child:hover {
+  color: var(--white-color);
+  background: #02636e;
+}
+.home .home-box nav .profile i{
+  color: white;
+  font-size: 40px;
+}
+
+.home .home-box .content .search {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 38rem;
+  height: 45px;
+  background: var(--white-color);
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  padding: .3rem;
+}
+
+.home .home-box .content .search i {
+  color: rgba(0,0,0,.5);
+  margin: 0 .6rem;
+}
+
+.home .home-box .content .search input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: 400;
+}
+
+.home .home-box .content .search button {
+  height: 100%;
+  padding: 0 1rem;
+  border-radius: inherit;
+  background: #0a797f;
+  border: none;
+  outline: none;
+  color: var(--white-color);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.home .home-box .content .search button:hover {
+  background: #02636e;
+}
+
+.home .home-box .content h5, .home .home-box .content h1, .home .home-box .content p, .home .home-box .content .search {
+  transform: translate(0, 100px);
+  opacity: 0;
+}
+.home .home-box .content {
+  width: 100%;
+  height: calc(100% - 65px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translate(0, -65px);
+}
+.home .home-box .content h1{
+  margin-top: 20px;
+  color: var(--white-color);
+  font-size: 100px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+}
+.home .home-box .content p{
+  color: var(--white-color);
+  text-transform: lowercase;
+  display: flex;
+  text-align: center;
+  font-size: 18px;
+}
+
+  /* keduaaa */
+  .box-2 {
+    padding: 1rem;
+    width: 100%;
+    height: 100vh;
+    margin-top: -24px;
+  }
+  
+  .box-2 .group-2 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .box-2 .overlap-group-2 {
+    margin-top: -5px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgb(11, 141, 147) 0%, rgb(83.03, 162.67, 164.69) 100%);
+  }
+  
+  .box-2 .text-wrapper-2 {
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    left: 5%;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    margin-top: -20px;
+  }
+  
+  .box-2 .journey-tropis-situs {
+    position: absolute;
+    width: 50%;
+    top: 35%;
+    left: 5%;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -35px;
+  }
+  
+  .box-2 .overlap {
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    top: 5%;
+    left: 5%;
+    background-color: #02333e;
+    border-radius: 30px;
+  }
+  
+  .box-2 .div {
+    position: absolute;
+    width: 90%;
+    top: 30%;
+    left: 10%;
+    font-family: "Poppins", Helvetica;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 1.5vw;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .box-2 .overlap-2 {
+    position: absolute;
+    width: 18%;
+    height: 7%;
+    top: 85%;
+    left: 5%;
+    border-radius: 30px;
+    border: 3px solid;
+    border-color: #ffffff;
+    margin-top: 10px;
+  }
+  
+  .box-2 .text-wrapper-3 {
+    position: absolute;
+    width: 80%;
+    top: 14%;
+    left: 5%;
+    font-family: "Poppins", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 1.5vw;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    margin-left: 29px;
+  }
+
+  .box-2 .group-2 .overlap-group-2 .overlap-2 .text-wrapper-3 a{
+    color: white;
+  }
+  .box-2 .group-2 .overlap-group-2 .overlap-2:hover{
+    background-color: #073a3d;
+  }
+ 
+  .box-2 .polygon {
+    position: absolute;
+    width: 0.6%;
+    height: 1.5%;
+    top: 3%;
+    left: 14%;
+  }
+  
+  .box-2 .overlap-3 {
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    top: 20%;
+    left: 60%;
+  }
+
+  .box-2 .portrait-multi {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    margin-left: 60px;
+    border: 7px solid white;
+    border-radius: 20px;
+  }
+  
+  .box-2 .business-team-two {
+    position: absolute;
+    width: 80%;
+    height: 52%;
+    top: 48%;
+    left: 10%;
+    object-fit: cover;
+    margin-left: 60px;
+    border: 7px solid white;
+    border-radius: 20px;
+  }
+  
+ /* Ketiga */
+
+ .box-3 {
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    margin-top: -45px;
+  }
+  
+  .box-3 .group-3 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .box-3 .overlap-group-3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/landscape_lake_surrounded_by_mountains_2.jpeg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+  }
+  
+  .box-3 .VISI-MISI{
+    position: absolute;
+    width: 40%;
+    top: 35%;
+    left: 30%;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 4vw;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .box-3 .text-wrapper-3 {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 15%;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  @media (max-width: 768px) {
+  .box-2 .text-wrapper-2,
+  .box-2 .journey-tropis-situs,
+  .box-2 .div,
+  .box-2 .text-wrapper-3,
+  .box-3 .VISI-MISI,
+  .box-3 .text-wrapper-3 {
+    font-size: 3.5vw; /* Menyesuaikan ukuran font untuk layar yang lebih kecil */
+  }
+
+  .box-2 .overlap-2,
+  .box-2 .portrait-multi,
+  .box-2 .business-team-two {
+    border-width: 0.5vw; /* Menyesuaikan lebar border untuk layar yang lebih kecil */
+  }
+}
+
+@media (max-width: 480px) {
+  .box-2 .text-wrapper-2,
+  .box-2 .journey-tropis-situs,
+  .box-2 .div,
+  .box-2 .text-wrapper-3,
+  .box-3 .VISI-MISI,
+  .box-3 .text-wrapper-3 {
+    font-size: 4vw; /* Menyesuaikan ukuran font untuk layar yang lebih kecil */
+  }
+
+  .box-2 .overlap-2,
+  .box-2 .portrait-multi,
+  .box-2 .business-team-two {
+    border-width: 0.3vw; /* Menyesuaikan lebar border untuk layar yang lebih kecil */
+  }
+} 
+/* footer section starts here  */
+
+footer {
+  padding:  1rem;
+  width: 100%;
+  margin-top: -19px;
+}
+
+footer .footer {
+  background: var(--dark-green);
+  border-bottom-left-radius: 10px; /* Radius pada sudut kiri bawah */
+  border-bottom-right-radius: 10px; /* Radius pada sudut kanan bawah */
+  padding: 6rem 7rem;
+  padding-bottom: 1rem;
+}
+
+footer .footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--green-color);
+  gap: 2rem;
+}
+
+footer .footer .container .detail {
+  max-width: 32rem;
+}
+
+footer .footer .container .detail h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--white-color);
+}
+
+footer .footer .container .detail p {
+  line-height: 1.6;
+  color: rgb(255 255 255/80%);
+  margin-bottom: 1.5rem;
+}
+
+footer .footer .container .detail h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--white-color);
+}
+
+footer .footer .container .detail a {
+  color: rgb(255 255 255/80%);
+  font-size: .9rem;
+  border-bottom: 2px solid #00cee4;
+  padding: 1px 0;
+  display: inline-block;
+  text-transform: lowercase;
+}
+
+footer .footer .container .detail .social {
+  display: flex;
+  gap: .8rem;
+  margin-top: 1rem;
+}
+
+footer .footer .container .detail .social a {
+  border: none;
+  font-size: 1.3rem;
+  color: var(--white-color);
+}
+
+footer .footer .container h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: .5rem;
+  color: var(--white-color);
+}
+
+footer .footer .container li {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+footer .footer .container a {
+  color: rgb(255 255 255/80%);
+}
+
+footer .footer .container a:hover {
+  color: var(--white-color);
+}
+
+footer .footer .container span {
+  color: #000;
+  background: #00cee4;
+  font-size: .9rem;
+  padding: .1rem .5rem;
+  border-radius: .3rem;
+  font-weight: 500;
+}
+
+footer .footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: .9rem;
+  color: rgb(255 255 255/80%);
+  text-align: center;
+}
+
+footer .footer .copyright a {
+  color: rgb(255 255 255/80%);
+  margin-left: 1rem;
+  text-align: center;
+}
+/* footer section ends here  */
+
+/* media section starts here  */
+@media (max-width: 1020px) {
+  html {
+      font-size: 85%;
+  }
+
+  section {
+      padding: 0 2rem;
+  }
+
+  footer .footer {
+      padding: 2rem;
+  }
+}
+
+@media (max-width: 910px) {
+
+  .home .home-box nav {
+      padding: 0 1rem;
+  }
+
+  .home .home-box nav .menu ul {
+      gap: 2rem;
+  }
+
+  .destinations .container .container-box {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  footer .footer .container {
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .heading {
+      font-size: 2rem;
+  }
+  .home .home-box nav .menu {
+      display: none;
+  }
+
+  .home .home-box nav .logo .bar {
+      display: block;
+  }
+
+  .home .home-box nav .menu.active {
+      display: block;
+      position: absolute;
+      left: -1.5rem;
+      top: -1.5rem;
+      width: 100vw;
+      height: 100vh;
+      background: rgb(0 0 0/90%);
+      display: flex;
+      align-items: center;
+      padding: 0 3rem;
+  }
+
+  .home .home-box nav .menu .close {
+      display: block;
+      position: absolute;
+      left: 3rem;
+      top: 3rem;
+      cursor: pointer;
+      color: var(--white-color);
+      font-size: 2rem;
+  }
+
+  .home .home-box nav .menu .close:hover {
+      color: rgb(255 255 255/40%);
+  }
+
+  .home .home-box nav .menu ul {
+      flex-direction: column;
+      font-size: 1.3rem;
+      gap: 1rem;
+  }
+
+  .home .home-box nav .menu ul:hover li a {
+      color: rgb(255 255 255/40%);
+  }
+
+  .home .home-box nav .menu ul li a:hover {
+      color: var(--white-color);
+  }
+
+  .home .home-box .content {
+      padding: 2rem;
+  }
+
+  .travel .container {
+      flex-direction: column;
+      padding: 4rem 0;
+      gap: 4rem;
+  }
+
+  .travel .container .box img {
+      height: 6rem;
+  }
+}
+
+@media (max-width: 607px) {
+  .home .home-box .content h1 {
+      font-size: 2rem;
+  }
+
+  .home .home-box .content p {
+      font-size: .8rem;
+  }
+  .home .home-box .search button{
+      font-size: .8rem;
+  }
+}
